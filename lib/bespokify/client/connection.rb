@@ -24,7 +24,7 @@ module Bespokify
       private
 
       def request(http_method, path, options)
-        response = self.class.send(http_method, path, body: options.to_json)
+        response = self.class.send(http_method, path, body: (options.to_json if options.any?))
         response.parsed_response
       end
     end
