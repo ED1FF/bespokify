@@ -3,6 +3,7 @@ require 'bespokify/client/material'
 require 'bespokify/client/draft'
 require 'bespokify/client/pattern'
 require 'bespokify/client/prediction'
+require 'bespokify/client/export'
 
 module Bespokify
   class Client
@@ -12,6 +13,7 @@ module Bespokify
     include Bespokify::Client::Draft
     include Bespokify::Client::Pattern
     include Bespokify::Client::Prediction
+    include Bespokify::Client::Export
     base_uri 'https://api.bespokify.com/v2'
 
     def initialize(login, password)
