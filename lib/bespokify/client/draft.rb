@@ -5,19 +5,19 @@ module Bespokify
         get('/drafts', options)
       end
 
-      def material(draft_id)
+      def draft(draft_id)
         get("/drafts/#{draft_id}")
       end
 
-      def create_material(options = {})
+      def create_draft(options = {})
         post('/drafts', options)
       end
 
-      def update_material(draft_id, options = {})
+      def update_draft(draft_id, options = {})
         patch("/drafts/#{draft_id}", options)
       end
 
-      def delete_material(draft_id)
+      def delete_draft(draft_id)
         delete("/drafts/#{draft_id}")
       end
     end
