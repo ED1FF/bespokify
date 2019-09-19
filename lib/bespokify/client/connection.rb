@@ -9,6 +9,10 @@ module Bespokify
         request :post, path, options
       end
 
+      def patch(path, options = {})
+        request :patch, path, options
+      end
+
       def put(path, options = {})
         request :put, path, options
       end
