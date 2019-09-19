@@ -7,5 +7,4 @@ group :development, :test do
   gem 'awesome_print'
 end
 
-# Specify your gem's dependencies in bespokify.gemspec
 gemspec
