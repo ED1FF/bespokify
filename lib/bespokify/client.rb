@@ -1,8 +1,10 @@
+require 'bespokify/client/connection'
 require 'bespokify/client/material'
 
 module Bespokify
   class Client
     include HTTParty
+    include Bespokify::Client::Connection
     include Bespokify::Client::Material
     base_uri 'https://api.bespokify.com/v2'
     format :json
