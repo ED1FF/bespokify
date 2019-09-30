@@ -5,6 +5,7 @@ require 'bespokify/client/pattern'
 require 'bespokify/client/prediction'
 require 'bespokify/client/export'
 require 'bespokify/client/measurement_profile'
+require 'bespokify/client/export_profile'
 
 module Bespokify
   class Client
@@ -16,6 +17,7 @@ module Bespokify
     include Bespokify::Client::Prediction
     include Bespokify::Client::Export
     include Bespokify::Client::MeasurementProfile
+    include Bespokify::Client::ExportProfile
     base_uri 'https://api.bespokify.com/v2'
 
     def initialize(login, password)
